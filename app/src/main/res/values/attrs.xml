@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EllipsizeTextView">
+        <attr name="minLines" format="integer" />
+        <attr name="endText" format="string" />
+        <attr name="originText" format="string" />
+        <attr name="endColor" format="reference|color" />
+        <attr name="endIsBold" format="boolean"/>
+        <attr name="endIcon" format="reference|color" />
+
+    </declare-styleable>
+
+</resources>
