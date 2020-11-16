@@ -157,7 +157,7 @@ public class EllipsizeTextView extends AppCompatTextView {
     }
 
     private void ellipsizeImage() {
-        if (TextUtils.isEmpty(originText)) {
+        if (TextUtils.isEmpty(originText) || endIcon == null) {
             return;
         }
         getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver
@@ -169,7 +169,7 @@ public class EllipsizeTextView extends AppCompatTextView {
                     int paddingLeft = getPaddingLeft();
                     int paddingRight = getPaddingRight();
                     TextPaint paint = getPaint();
-                    float moreText = getTextSize() * 2;
+                    float moreText = endIcon.getMinimumWidth() * minLines;
                     float availableTextWidth = (getWidth() - paddingLeft - paddingRight) *
                             minLines - moreText;
                     CharSequence ellipsizeStr = TextUtils.ellipsize(originText, paint,
