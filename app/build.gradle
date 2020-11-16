@@ -4,9 +4,9 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-apply plugin: 'com.github.dcendents.android-maven'
+/*apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.wangpingtaohn'
+group='com.github.wangpingtaohn'*/
 
 
 android {
@@ -36,5 +36,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-    implementation 'com.github.wangpingtaohn:EllipsizeTextView:1.0.1'
+//    implementation 'com.github.wangpingtaohn:EllipsizeTextView:1.0.1'
 }
